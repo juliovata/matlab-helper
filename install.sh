@@ -32,8 +32,8 @@ rm -f ${HOME}/.local/share/applications/matlab.desktop
 echo "Downloading and Installing latest files..."
 
 # TODO(juliovata) for now just cp relevant files from current directory
-cp matlab_launcher.sh ${HOME}/matlab-ubuntu
-cp matlab.desktop ${HOME}/.local/share/applications/matlab.desktop
+cp matlab_launcher.sh ${HOME}/matlab-ubuntu/
+cp matlab.desktop ${HOME}/.local/share/applications/
 
 # Add MATLAB executable to matlab_launcher.sh
 sed -i -e "s|\"MATLAB Executable Here With Full Path\"|${MATLAB_PATH}/MATLAB|g" ${HOME}/matlab-ubuntu/matlab_launcher.sh
@@ -42,5 +42,8 @@ sed -i -e "s|\"MATLAB Executable Here With Full Path\"|${MATLAB_PATH}/MATLAB|g" 
 sed -i -e "s|\"MATLAB Version Here\"|${MATLAB_VERSION}|g" ${HOME}/.local/share/applications/matlab.desktop
 sed -i -e "s|\"Icon Path Here\"|${MATLAB_PATH}/cef_resources/matlab_icon.png|g" ${HOME}/.local/share/applications/matlab.desktop
 sed -i -e "s|\"Executable Path Here\"|${HOME}/matlab-ubuntu/matlab_launcher.sh|g" ${HOME}/.local/share/applications/matlab.desktop
+
+chmod +x ${HOME}/matlab-ubuntu/matlab_launcher.sh
+chmod +x ${HOME}/.local/share/applications/matlab.desktop
 
 # TODO(juliovata) add file associations
