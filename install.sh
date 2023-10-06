@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # check for argument
+# TODO(juliovata) add flag for -softwareopengl during install
 if [ $# -ne 1 ]
 then
   echo "Usage:   install.sh [Full path to MATLAB Executable]"
