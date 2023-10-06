@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=MATLAB "MATLAB Version Here"
+Icon="Icon Path Here"
+Exec="Executable Path Here" 
+Comment=MATLAB
+Categories=Development;IDE;
+Terminal=false
