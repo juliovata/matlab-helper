@@ -8,4 +8,4 @@ Icon="Icon Path Here"
 Categories=Development;Math;Science
 Comment=Scientific computing environment
 StartupNotify=true
-StartupWMClass=MATLAB R2023b - academic use
+StartupWMClass=MATLAB "MATLAB Version Here" - academic use
