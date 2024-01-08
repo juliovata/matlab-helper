@@ -8,4 +8,4 @@ Icon="Icon Path Here"
 Categories=Development;Math;Science
 Comment=Scientific computing environment
 StartupNotify=true
-StartupWMClass=com-mathworks-util-PostVMInit
+StartupWMClass=MATLAB R2023b - academic use
