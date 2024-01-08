@@ -1,8 +1,11 @@
 [Desktop Entry]
+Version="MATLAB Version Here"
 Type=Application
+Terminal=false
+Exec="Executable Path Here" 
 Name=MATLAB "MATLAB Version Here"
 Icon="Icon Path Here"
-Exec="Executable Path Here" 
-Comment=MATLAB
-Categories=Development;IDE;
-Terminal=false
+Categories=Development;Math;Science
+Comment=Scientific computing environment
+StartupNotify=true
+StartupWMClass=com-mathworks-util-PostVMInit

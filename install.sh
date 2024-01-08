@@ -41,10 +41,11 @@ sed -i -e "s|\"MATLAB Executable Here With Full Path\"|${MATLAB_PATH}/MATLAB|g" 
 
 # Add current version, icon path, and script executable path to desktop file
 sed -i -e "s|\"MATLAB Version Here\"|${MATLAB_VERSION}|g" ${HOME}/.local/share/applications/matlab.desktop
+
+# TODO add option for using system icon versus default icon?
 sed -i -e "s|\"Icon Path Here\"|${MATLAB_PATH}/cef_resources/matlab_icon.png|g" ${HOME}/.local/share/applications/matlab.desktop
 sed -i -e "s|\"Executable Path Here\"|${HOME}/matlab-ubuntu/matlab_launcher.sh|g" ${HOME}/.local/share/applications/matlab.desktop
 
 chmod +x ${HOME}/matlab-ubuntu/matlab_launcher.sh
-chmod +x ${HOME}/.local/share/applications/matlab.desktop
 
 # TODO(juliovata) add file associations
