@@ -15,9 +15,14 @@ then
 	cd "${DEFAULT_DIR}"
 	${MATLAB} -desktop "${LAUNCH_FLAGS}"
 else
-	FILE_DIR=$(dirname "$1")
-	FILENAME=$(basename "$1")
-
-	cd "${FILE_DIR}"
-	${MATLAB} -desktop "${LAUNCH_FLAGS}" -r "edit ${FILENAME}"
+	if [[ -d "$1" ]]; then
+		cd "$1"
+		${MATLAB} -desktop "${LAUNCH_FLAGS}"	
+	else
+		FILE_DIR=$(dirname "$1")
+		FILENAME=$(basename "$1")
+		
+		cd "$FILE_DIR"
+		${MATLAB} -desktop "${LAUNCH_FLAGS}" -r "edit ${FILENAME}"
+	fi
 fi
